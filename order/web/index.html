@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open Orders</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #4b6cb7; /* Indigo-ish */
+      color: white;
+      padding: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    header button {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-around;
+      background-color: #eee;
+      padding: 12px 0;
+      font-weight: bold;
+    }
+
+    table {
+      width: 90%;
+      margin: 16px auto;
+      border-collapse: collapse;
+      background-color: white;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Open Orders</h1>
+    <button>Cancel All</button>
+  </header>
+
+  <div class="top-bar">
+    <div>SIGNORIA 0.00</div>
+    <div>NIFTY BANK 52,323.30</div>
+    <div>NIFTY FIN SERVICE 25,255.75</div>
+    <div>RELCHEMQ 162.73</div>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Client</th>
+        <th>Ticker</th>
+        <th>Side</th>
+        <th>Product</th>
+        <th>Qty (Executed/Total)</th>
+        <th>Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>AAA001</td>
+        <td>RELIANCE</td>
+        <td>Buy</td>
+        <td>CNC</td>
+        <td>50/100</td>
+        <td>250.50</td>
+      </tr>
+      <tr>
+        <td>AAA003</td>
+        <td>MRF</td>
+        <td>Buy</td>
+        <td>NRML</td>
+        <td>10/20</td>
+        <td>2700.00</td>
+      </tr>
+      <tr>
+        <td>AAA002</td>
+        <td>ASIANPAINT</td>
+        <td>Buy</td>
+        <td>NRML</td>
+        <td>10/30</td>
+        <td>1500.60</td>
+      </tr>
+      <tr>
+        <td>AAA002</td>
+        <td>TATAINVEST</td>
+        <td>Sell</td>
+        <td>INTRADAY</td>
+        <td>10/10</td>
+        <td>2300.10</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
